@@ -5,6 +5,7 @@ header{
     justify-content: space-between;
     align-items: flex-start;
     padding: 37px 48px;
+    position: relative;
 }
 
 .logo{
@@ -15,12 +16,57 @@ header{
 
 input[type="checkbox"]:checked ~ nav {
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
 }
 
 nav{
     display: none;
 }
+
 .navigation-menu{
     margin-top: 24px;
 }
 
+.list-link{
+    list-style: none;
+}
+
+.list-link li{
+    margin: 10px 0;
+}
+
+.list-link li a{
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    font-weight: var(--menu-text-weight);
+    font-size: 24px;
+}
+
+body{
+    font-family: "Montserrat";
+}
+
+@media screen and (min-width: 768px){
+    .navigation-menu{
+        margin-top: 0;
+        width: 467px;
+    }
+    .navigation-menu label{
+        display: none;
+    }
+    .navigation-menu ul{
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    .navigation-menu nav{
+        display: block;
+    }
+    .navigation-menu li{
+        margin: 0;
+    }
+}
