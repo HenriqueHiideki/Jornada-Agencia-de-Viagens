@@ -1,0 +1,51 @@
+.card{
+    color: var(--text-secondary-color);
+    background-color: var(--background-tertiary-color);
+    padding: 24px 16px;
+    width: 312px;
+    height: 288px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 16px;
+    margin: 40px;
+}
+
+.card header{
+    display: block;
+    background-color: transparent;
+    position: static;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.card header p{
+    font-size: 20px;
+    font-weight: var(--text-weight);
+}
+
+.card header h3{
+    font-size: 40px;
+    font-weight: var(--title-weight);
+    margin: 8px 0 0 24px;
+}
+
+.card header span{
+    font-size: 32px;
+    font-weight: var(--title-weight);
+    margin-top: 24px;
+    display: inline-block;
+}
+
+
+.button{
+    width: 280px;
+    height: 64px;
+    color: var(--text-secondary-color);
+    font-weight: var(--title-weight);
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 16px;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 64px;
+}
