@@ -7,7 +7,6 @@
     box-sizing: border-box;
     text-align: center;
     border-radius: 16px;
-    margin: 40px;
 }
 
 .card header{
@@ -26,7 +25,8 @@
 .card header h3{
     font-size: 40px;
     font-weight: var(--title-weight);
-    margin: 8px 0 0 24px;
+    margin: 8px 0 0;
+    margin-bottom: 24px;
 }
 
 .card header span{
@@ -48,4 +48,38 @@
     display: inline-block;
     text-decoration: none;
     line-height: 64px;
+}
+
+.card.japao{
+    background: url(../img/card-japan.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.san.andreas{
+    background: url(../img/card-san-andreas.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.paraiba{
+    background: url(../img/card-paraiba.jpg) no-repeat;
+    background-size: cover;
+}
+
+.card.manaus{
+    background: url(../img/card-manaus.jpg) no-repeat;
+    background-size: cover;
+}
+.button:hover{
+    background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 1024px){
+    .card{
+        width: 588px;
+        height: 308px;
+        font-size: 48px;
+    }
+    .card header span{
+        font-size: 40px;
+    }
 }
