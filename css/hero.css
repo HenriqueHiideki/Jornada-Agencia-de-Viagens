@@ -1,5 +1,10 @@
-.hero{
-
+.hero h2{
+    padding: 88px 60px;
+    margin: 0px;
+    font-weight: var(--text-weight);
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
 }
 
 .hero-img{
@@ -17,13 +22,20 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.hero h2{
+    padding: 88px 60px;
+    font-size: 32px;
+}
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1920px){
     .hero-img{
     height: 820px;
     background-image: url(../img/hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.hero h2{
+    padding: 88px 120px;
 }
 }
