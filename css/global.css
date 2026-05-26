@@ -43,6 +43,7 @@ h1 {
   font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
+  margin-top: 45px;
 }
 
 .section-title hr{
