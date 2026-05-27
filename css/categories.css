@@ -1,3 +1,7 @@
+.categories{
+    margin-bottom: 80px;
+}
+
 .categories-container{
     display: flex;
     flex-wrap: wrap;
@@ -42,4 +46,20 @@
         max-width: 720px;
         margin: 0 auto;
     }
+}
+
+@media screen and (min-width: 1024px){
+    .categories-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+.categories-img{
+    height: 80px;
+    width: 280px;
+    object-fit: contain;
+    border: none;
+    outline: none;
+}
 }
