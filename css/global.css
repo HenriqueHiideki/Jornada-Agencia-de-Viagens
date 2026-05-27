@@ -26,6 +26,15 @@ html, body{
     color: var(--text-primary-color);
 }
 
+section{
+  width: 312px;
+  margin: 0 auto;
+}
+
+section.hero{
+  width: 100%;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url(../fontes/Montserrat-VariableFont_wght.ttf);
