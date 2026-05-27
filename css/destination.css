@@ -1,0 +1,44 @@
+.destination-img-tokyo{
+    background-image: url(../img/tokyo-mobile.jpg);
+    width: 100%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-img-osaka{
+    background-image: url(../img/osaka-mobile.jpg);
+    width: 100%;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destinations .item header{
+    display: block;
+    background-color: transparent;
+    position: static;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+.text-destination{
+    font-weight: var(--text-weight);
+    font-size: 19px;
+    font-family: "Montserrat";
+    text-align: left;
+    line-height: 1.6;
+}
+
+.title-destination{
+    font-weight: var(--title-weight);
+    font-size: 26px;
+    text-align: center;
+    margin: 24px;
+}
+
+.button-destination{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
