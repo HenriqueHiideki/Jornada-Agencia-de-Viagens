@@ -27,12 +27,15 @@ html, body{
 }
 
 section{
-  width: 312px;
+  width: 90%;
+  max-width: 350px;
   margin: 0 auto;
 }
 
 section.hero{
   width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 @font-face {
@@ -66,6 +69,23 @@ h1 {
 @media screen and (min-width: 768px){
   .section-title h2{
   font-size: 32px;
-
 }
+section {
+    max-width: 600px; /* Aumenta o limite para tablets */
+}
+section.hero{
+  width: 100%;
+  max-width: none;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 1400px; /* libera a largura no desktop */
+  }
+
+  section.hero {
+    width: 100%;
+    max-width: none;
+  }
 }

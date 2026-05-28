@@ -1,123 +1,158 @@
-.offers-cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-.card{
-    color: var(--text-secondary-color);
-    background-color: var(--background-tertiary-color);
-    padding: 24px 16px;
-    width: 312px;
-    height: 288px;
-    box-sizing: border-box;
-    text-align: center;
-    border-radius: 16px;
-    overflow: hidden;
+.card {
+  color: var(--text-secondary-color);
+  background-color: var(--background-tertiary-color);
+  padding: 24px 16px;
+  width: 312px;
+  max-width: 340px;
+  height: 288px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.card header{
-    display: block;
-    background-color: transparent;
-    position: static;
-    border-radius: 16px;
-    padding: 10px;
+.card header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  border-radius: 16px;
+  padding: 10px;
 }
 
-.card header p{
-    font-size: 20px;
-    font-weight: var(--text-weight);
+.card header p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
 }
 
-.card header h3{
-    font-size: 40px;
-    font-weight: var(--title-weight);
-    margin: 8px 0 0;
-    margin-bottom: 24px;
+.card header h3 {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+  margin: 8px 0 0;
+  margin-bottom: 24px;
 }
 
-.card header span{
-    font-size: 32px;
-    font-weight: var(--title-weight);
-    margin-top: 24px;
-    display: inline-block;
+.card header span {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin-top: 24px;
+  display: inline-block;
 }
 
-
-.button{
-    width: 280px;
-    height: 64px;
-    color: var(--text-secondary-color);
-    font-weight: var(--title-weight);
-    font-size: 20px;
-    background-color: var(--secondary-color);
-    border-radius: 16px;
-    display: inline-block;
-    text-decoration: none;
-    line-height: 64px;
+.button {
+  width: 280px;
+  height: 64px;
+  color: var(--text-secondary-color);
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 64px;
 }
 
-.card.japao{
-    background: url(../img/card-japan.jpg) no-repeat;
-    background-size: cover;
+.card.japao {
+  background: url(../img/card-japan.jpg) no-repeat;
+  background-size: cover;
 }
 
-.card.san.andreas{
-    background: url(../img/card-san-andreas.jpg) no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.card.san.andreas {
+  background: url(../img/card-san-andreas.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card.paraiba{
-    background: url(../img/card-paraiba.jpg) no-repeat;
-    background-size: cover;
+.card.paraiba {
+  background: url(../img/card-paraiba.jpg) no-repeat;
+  background-size: cover;
 }
 
-.card.manaus{
-    background: url(../img/card-manaus.jpg) no-repeat;
-    background-size: cover;
+.card.manaus {
+  background: url(../img/card-manaus.jpg) no-repeat;
+  background-size: cover;
 }
-.button:hover{
-    background-color: var(--primary-color);
+.button:hover {
+  background-color: var(--primary-color);
 }
 
 .card.san.andreas header {
-    padding: 0px;
-    padding-top: 37px;
+  padding: 0px;
+  padding-top: 37px;
 }
 
-.card.san.andres header h3{
-    font-size: 32px;
-    margin-bottom: 0px;
+.card.san.andres header h3 {
+  font-size: 32px;
+  margin-bottom: 0px;
 }
 
 .card.san.andreas header span {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .card.san.andreas footer {
-    margin-top: auto;
+  margin-top: auto;
 }
 
-@media screen and (min-width: 768px){
-    .offers-cards{
-    flex-direction: row;
-    flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    gap: 24px;
+    max-width: 700px;
     justify-content: center;
-}
+
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 340px;
+    width: 100%;
+    height: 288px;
+  }
 }
 
-@media screen and (min-width: 1024px){
-    .card{
-        width: 588px;
-        height: 308px;
-        font-size: 48px;
-    }
-    .card header span{
-        font-size: 40px;
-    }
+@media screen and (min-width: 1024px) {
+
+  .offers-cards {
+    display: grid;
+
+    /* 2 colunas responsivas */
+    grid-template-columns: repeat(2, minmax(450px, 1fr));
+
+    gap: 24px;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: none;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 24px;
+  }
+
+  .card header {
+    padding: 0;
+  }
+
+  .card footer {
+    display: flex;
+    justify-content: center;
+  }
 }

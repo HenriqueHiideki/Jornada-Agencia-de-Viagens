@@ -1,45 +1,106 @@
-.destination-img-tokyo{
-    background-image: url(../img/tokyo-mobile.jpg);
-    width: 100%;
-    height: 360px;
+.destination-img-tokyo {
+  background-image: url(../img/tokyo-mobile.jpg);
+  width: 100%;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destination-img-osaka {
+  background-image: url(../img/osaka-mobile.jpg);
+  width: 100%;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.destinations .item header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.text-destination {
+  font-weight: var(--text-weight);
+  font-size: 19px;
+  font-family: "Montserrat";
+  text-align: left;
+  line-height: 1.6;
+  padding: 24px;
+}
+
+.title-destination {
+  font-weight: var(--title-weight);
+  font-size: 26px;
+  text-align: center;
+  margin: 24px;
+}
+
+.button-destination {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .destination-img-tokyo {
+    background-image: url(../img/tokyo-tablet-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.destination-img-osaka{
-    background-image: url(../img/osaka-mobile.jpg);
-    width: 100%;
-    height: 360px;
+  }
+  .destination-img-osaka {
+    background-image: url(../img/osaka-tablet-deskop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
 }
 
-.destinations .item header{
-    display: block;
-    background-color: transparent;
-    position: static;
-    padding: 0;
-    margin-bottom: 24px;
-}
+@media screen and (min-width: 1024px) {
 
-.text-destination{
-    font-weight: var(--text-weight);
-    font-size: 19px;
-    font-family: "Montserrat";
+  .destination-items {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* ✅ Imagens mais altas, como no esboço */
+  .destination-img-tokyo,
+  .destination-img-osaka {
+    width: 100%;
+    height: 340px; /* era 260px — aumentado */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+
+  /* ✅ Título alinhado à esquerda, sem margin excessiva */
+  .title-destination {
     text-align: left;
-    line-height: 1.6;
-    padding: 24px;
+    margin: 16px 0 8px 0; /* era margin: 24px (todos os lados) */
+  }
+
+  /* ✅ Texto sem padding lateral */
+  .text-destination {
+    padding: 0;
+    font-size: 16px; /* levemente menor no desktop fica mais elegante */
+  }
+
+  /* ✅ Botão alinhado à esquerda */
+  .button-destination {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
 }
 
-.title-destination{
-    font-weight: var(--title-weight);
-    font-size: 26px;
-    text-align: center;
-    margin: 24px;
-}
-
-.button-destination{
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 30px;
-}
