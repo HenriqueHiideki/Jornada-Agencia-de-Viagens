@@ -1,0 +1,45 @@
+.text-feedback {
+  font-size: 18px;
+  font-weight: var(--text-weight);
+}
+
+.feedback-talita {
+  background-image: url(../img/review-talita.png);
+  width: 300px;
+  height: 90px;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.feedback-amari {
+  background-image: url(../img/review-amari.png);
+  width: 300px;
+  height: 90px;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.feedback-lauro {
+  background-image: url(../img/review-lauro.png);
+  width: 300px;
+  height: 90px;
+  background-size: cover;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .feedbacks-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .feedback-item{
+    flex: 1;
+    max-width: 400px;
+  }
+}
