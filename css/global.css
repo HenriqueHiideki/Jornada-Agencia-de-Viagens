@@ -34,6 +34,8 @@ section{
 
 section.hero{
   width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 @font-face {
@@ -75,4 +77,15 @@ section.hero{
   width: 100%;
   max-width: none;
 }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 1400px; /* libera a largura no desktop */
+  }
+
+  section.hero {
+    width: 100%;
+    max-width: none;
+  }
 }

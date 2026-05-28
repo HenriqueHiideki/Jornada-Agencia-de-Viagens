@@ -51,12 +51,25 @@
     }
 }
 
-@media screen and (min-width: 1024px){
-.categories-img{
+@media screen and (min-width: 1024px) {
+  .categories-img {
     height: 80px;
-    width: 280px;
+    width: 80px; /* ✅ volta ao tamanho correto */
     object-fit: contain;
-    border: none;
-    outline: none;
-}
+  }
+
+  .categories-search {
+    width: 220px; /* ✅ levemente maior para caber bem */
+    margin: 0;
+  }
+
+  .categories-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 24px; /* ✅ gap maior para respirar */
+    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
