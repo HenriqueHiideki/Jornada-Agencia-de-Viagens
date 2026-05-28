@@ -43,3 +43,29 @@
     justify-content: center;
     margin-bottom: 30px;
 }
+
+@media screen and (min-width: 768px){
+    .destination-img-tokyo{
+        background-image: url(../img/tokyo-tablet-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .destination-img-osaka{
+        background-image: url(../img/osaka-tablet-deskop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .destination-img-tokyo{
+        background-image: url(../img/tokyo-tablet-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .destination-img-osaka{
+        background-image: url(../img/osaka-tablet-deskop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

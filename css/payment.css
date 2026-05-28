@@ -47,5 +47,27 @@
 }
 
 .img-full-trip {
-    margin: 24px;
+  margin: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .trip1 {
+    background-image: url(../img/viagem1-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 267px;
+  }
+
+  .trip2 {
+    background-image: url(../img/viagem2-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 267px;
+  }
+
+  .trip3 {
+    background-image: url(../img/viagem3-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
