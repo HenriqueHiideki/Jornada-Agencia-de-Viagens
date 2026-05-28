@@ -38,6 +38,12 @@ section.hero{
   margin: 0;
 }
 
+section.footer-hero{
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
 @font-face {
   font-family: Montserrat;
   src: url(../fontes/Montserrat-VariableFont_wght.ttf);
