@@ -1,0 +1,28 @@
+.footer-jornada{
+    background-color: var(--background-tertiary-color);
+    height: 360px;
+}
+
+.text-footer{
+    color: var(--text-secondary-color);
+    font-size: 22px;
+    font-family: "Montserrat";
+    text-align: center;
+    align-items: center;
+}
+
+.img-footer{
+    width: 200px;
+    height:60px;
+    margin: 0 auto;
+    display: block;
+}
+
+.social-media{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+}
