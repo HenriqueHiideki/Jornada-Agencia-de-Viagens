@@ -23,3 +23,14 @@
     font-size: 42px;
     margin-left: 30px;
 }
+
+@media screen and (min-width: 768px){
+    .package-hero-img{
+        background-image: url(../img/package-hero-tablet.jpg);
+        padding: 60px;
+    }
+    .package-text-hero{
+        font-size: 30px;
+    }
+    
+}
