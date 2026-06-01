@@ -1,0 +1,19 @@
+.package-footer-hero {
+  background-image: url(../img/hero-footer-mobile.jpg);
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  margin-top: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .package-footer-hero{
+    background-image: url(../img/hero-footer-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .package-footer-hero{
+    background-image: url(../img/hero-footer-desktop.jpg);
+  }
+}
