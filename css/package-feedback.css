@@ -1,0 +1,75 @@
+.package-text-feedback {
+  color: var(--text-primary-color);
+  font-size: 16px;
+  text-align: left;
+  line-height: 1.6;
+  padding: 25px;
+}
+
+.img-julio {
+  background-image: url(../img/feedback-julio.png);
+  background-size: cover;
+  width: 300px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.img-lucia {
+  background-image: url(../img/feedback-lucia.png);
+  background-size: cover;
+  width: 300px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.img-olga {
+  background-image: url(../img/feedback-olga.png);
+  background-size: cover;
+  width: 300px;
+  height: 90px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .img-julio {
+    margin-left: 20px;
+  }
+  .img-lucia {
+    margin-left: 20px;
+  }
+  .img-olga {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-feedback {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 0;
+  }
+  .container-image {
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+    .img-julio {
+    margin-left: 0px;
+    width: 297px;
+  }
+  .img-lucia {
+    margin-left: 0px;
+    width: 297px;
+  }
+  .img-olga {
+    margin-left: 0px;
+    width: 297px;
+  }
+  .package-text-feedback{
+    flex: 1;
+  }
+}
