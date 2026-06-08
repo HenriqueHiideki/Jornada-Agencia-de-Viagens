@@ -109,6 +109,8 @@ Durante o desenvolvimento deste projeto foram praticados:
 
 ---
 
+
+
 ## 👨‍💻 Autor
 
 Desenvolvido como projeto prático da trilha de Front-End da **Alura**.
